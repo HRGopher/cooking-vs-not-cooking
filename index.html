@@ -6,11 +6,43 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css">
-    <title>Cooking vs Not Cooking</title>
+    <title>Cooking vs Not Cooking vs Ordering</title>
 </head>
 
 <body>
     <h1>Is it worth to cook? <span style="text-decoration: line-through;">(for you)</span></h1>
+    <div>
+        <div>
+            How much do you make an
+            <select name="time" id="">
+                <option value="hour">hour</option>
+                <option value="day">day</option>
+                <option value="week">week</option>
+                <option value="month">month</option>
+            </select>
+            <input type="number" value="5" min="0" max="10000000" step="1">$
+            Breakfast: <input type="number" placeholder="25" min="0" max="200" step="1" />$
+        </div>
+    </div>
+    <label for="table">Cost</label>
+    <table id="table">
+        <tr>
+            <th style="border: 0;"></th>
+            <th>Cooking</th>
+            <th>No Cooking</th>
+            <th>Ordering</th>
+            <th>Ordering groceries</th>
+        </tr>
+        <tr>
+            <th>Breakfast</th>
+        </tr>
+        <tr>
+            <th>Midnight snack</th>
+        </tr>
+        <tr>
+            <th>Lunch</th>
+        </tr>
+    </table>
     <script type="module" src="/src/main.js"></script>
 </body>
 
